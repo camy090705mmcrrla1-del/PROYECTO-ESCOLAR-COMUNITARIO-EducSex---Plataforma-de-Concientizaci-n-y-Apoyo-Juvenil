@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EducSex: plataforma educativa para jóvenes.">
+  <title>EducSex - Villa Victoria | CECyTEM</title>
+
+  <!-- Bootstrap 5 CSS mediante CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Leaflet para el mapa -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="hero text-white py-4">
+    <div class="container">
+      <div class="d-flex align-items-center gap-3">
+        <img src="img/logo_cecyte.png" alt="Logotipo CECyTEM" class="logo rounded bg-white p-1" onerror="this.style.display='none'">
+        <div>
+          <h1 class="h2 mb-1">Proyecto EducSex - Villa Victoria</h1>
+          <p class="mb-0">Plataforma de concientización y orientación juvenil</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">EducSex</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#mitos">Mitos y realidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapa">Centros de salud</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chatbot">Chatbot</a></li>
+          <li class="nav-item"><a class="nav-link" href="#test">Test de conocimientos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <!-- MÓDULO 1 -->
+    <section id="mitos" class="card shadow-sm border-0 mb-4">
+      <div class="card-body p-4">
+        <h2 class="h3 section-title">Mitos y realidades sobre el embarazo adolescente</h2>
+        <p class="text-secondary">Conoce información general y distingue los mitos de las realidades.</p>
+        <div id="mitos-lista" class="row g-3"></div>
+      </div>
+    </section>
+        
+<!-- MÓDULO 2: CENTROS DE SALUD -->
+<section id="mapa" class="container my-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary">
+            Centros de salud cercanos
+        </h2>
+        <p class="text-muted">
+            Conoce los centros de salud de nuestra comunidad.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- CENTRO DE SALUD 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <img src="centro3.jpeg"
+                     class="card-img-top imagen-centro"
+                     alt="Fotografía del centro de salud 1">
+
+                <div class="card-body">
+                    <h3 class="card-title h5">
+                        Centro Médico Villa Victoria
+                    </h3>
+
+                    <p><strong>Dirección:</strong>
+                        Calle: C. Lazaro Cardenas Manzana 014, Jesus Maria, 50986, Villa Victoria, Méx.
+                    </p>
+
+                    <p><strong>Teléfono:</strong>
+                        911
+                    </p>
+
+                    <p><strong>Horario:</strong>
+                        Abierto las 24 horas
+                    </p>
+
+                    <p><strong>Servicios:</strong>
+                        Serviciosde salud, orientacion y emergencias.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CENTRO DE SALUD 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <img src="img2.jpeg"
+                     class="card-img-top imagen-centro"
+                     alt="Fotografía del centro de salud 2">
+
+                <div class="card-body">
+                    <h3 class="card-title h5">
+                        Issemym
+                    </h3>
+
+                    <p><strong>Dirección:</strong>
+                        Carretera Federal Toluca - Zitacuaro, KM 46, Jesus Maria
+                    </p>
+
+                    <p><strong>Teléfono:</strong>
+                        722 226 19 00
+                    </p>
+
+                    <p><strong>Horario:</strong>
+                        Lunes a viernes de 8:00 a 14:00 horas
+                    </p>
+
+                    <p><strong>Servicios:</strong>
+                        Clinica de consulta externa para servicios medicos y antención u orientación
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CENTRO DE SALUD 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+
+                <img src="img.jpeg"
+                     class="card-img-top imagen-centro"
+                     alt="Fotografía del centro de salud 3">
+
+                <div class="card-body">
+                    <h3 class="card-title h5">
+                        Clinica IMMS 243
+                    </h3>
+
+                    <p><strong>Dirección:</strong>
+                        Avenida Vialidad Lazaro Cardenas, Col. Jesus Maria, Villa Victoria
+                    </p>
+
+                    <p><strong>Teléfono:</strong>
+                        800 623 2323
+                    </p>
+
+                    <p><strong>Horario:</strong>
+                        Lunes a Viernes de 8:00 a 20:00 horas
+                    </p>
+
+                    <p><strong>Servicios:</strong>
+                      Servicios Medicos y de orientacion (Atención al cliente
+                      )
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <div id="centros-lista" class="row g-3"></div>
+      </div>
+    </section>
+
+    <!-- MÓDULO 3 -->
+    <section id="chatbot" class="card shadow-sm border-0 mb-4">
+      <div class="card-body p-4">
+        <h2 class="h3 section-title">Chatbot de orientación anónimo</h2>
+        <p class="text-secondary">No escribas tu nombre, dirección, teléfono u otros datos personales.</p>
+        <div class="alert alert-info" role="note">Este chat ofrece información educativa general, no diagnósticos ni atención de emergencia. Para una urgencia, busca atención profesional local.</div>
+        <div id="chat-box" class="chat-box mb-3" aria-live="polite">
+          <div class="chat-message bot-message"><strong>EducSex Bot:</strong> ¡Hola! Puedo orientarte con información general sobre prevención del embarazo, ITS, anticoncepción y consentimiento. ¿Qué te gustaría saber?</div>
+        </div>
+        <form id="chat-form" class="row g-2">
+          <div class="col-12 col-md-9">
+            <label class="visually-hidden" for="userInput">Escribe tu pregunta</label>
+            <input type="text" class="form-control" id="userInput" maxlength="1000" placeholder="Escribe tu duda general…" required>
+          </div>
+          <div class="col-12 col-md-3 d-grid">
+            <button id="chat-send" class="btn btn-success" type="submit">Enviar mensaje</button>
+          </div>
+        </form>
+        <p id="chat-status" class="form-text mt-2" aria-live="polite">El modo básico funciona sin servidor. Para respuestas generadas por IA consulta README.md.</p>
+      </div>
+    </section>
+
+    <!-- MÓDULO 4 -->
+    <section id="test" class="card shadow-sm border-0 mb-4">
+      <div class="card-body p-4">
+        <h2 class="h3 section-title">Test automatizado de conocimientos</h2>
+        <p class="text-secondary">Contesta y consulta tu puntuación con una explicación de cada respuesta.</p>
+        <form id="quiz-form">
+          <div id="quiz-box"></div>
+          <button type="submit" class="btn btn-primary mt-2">Calificar test</button>
+          <button type="button" id="quiz-reset" class="btn btn-outline-secondary mt-2">Volver a empezar</button>
+        </form>
+        <div id="quiz-resultado" class="alert alert-success mt-3 d-none" aria-live="polite"></div>
+        <hr class="my-4">
+        <h3 class="h4 section-title">¿Qué aprendiste?</h3>
+        <p>Completa esta reflexión para identificar lo que aprendiste y qué temas te gustaría conocer mejor.</p>
+        <form id="aprendizaje-form">
+          <div class="mb-3">
+            <label for="aprendi" class="form-label fw-semibold">1. Escribe dos cosas nuevas que aprendiste.</label>
+            <textarea id="aprendi" class="form-control" rows="3" maxlength="1500" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="duda" class="form-label fw-semibold">2. ¿Qué tema te gustaría comprender mejor?</label>
+            <textarea id="duda" class="form-control" rows="2" maxlength="1000" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="aplicacion" class="form-label fw-semibold">3. ¿Cómo puedes utilizar esta información para tomar decisiones informadas y respetuosas?</label>
+            <textarea id="aplicacion" class="form-control" rows="3" maxlength="1500" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Mostrar mi reflexión</button>
+        </form>
+        <div id="aprendizaje-resultado" class="alert alert-info mt-3 d-none" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bootstrap 5 JavaScript Bundle (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Leaflet y JavaScript del proyecto -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/mitos.js"></script>
+  <script src="js/geoloc.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/test.js"></script>
+</body>
+</html>
