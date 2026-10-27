@@ -1,0 +1,50 @@
+body { background: #f1f5f9; color: #243047; }
+.hero { background: linear-gradient(120deg, #164e63, #0f766e); }
+.logo { width: 68px; height: 68px; object-fit: contain; }
+.navbar .nav-link { color: #e2e8f0; }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: #fff; text-decoration: underline; }
+.card { border-radius: 1rem; }
+.section-title { color: #155e75; font-weight: 700; margin-bottom: 1rem; }
+.myth-card, .centre-card { height: 100%; border: 1px solid #dbe5ec; border-radius: .75rem; padding: 1rem; background: #fff; }
+.myth-card .myth { color: #9f3a38; }
+.myth-card .reality { color: #166534; margin-bottom: 0; }
+.centre-image { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; border-radius: .5rem; }
+#map { height: 350px; width: 100%; border-radius: .75rem; border: 1px solid #cbd5e1; z-index: 1; }
+.chat-box { height: 300px; overflow-y: auto; padding: 1rem; border: 1px solid #dbe5ec; border-radius: .75rem; background: #f8fafc; }
+.chat-message { max-width: 92%; padding: .75rem 1rem; margin: .5rem 0; border-radius: .75rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.bot-message { background: #e0f2fe; margin-right: auto; }
+.user-message { background: #dcfce7; margin-left: auto; }
+.quiz-question { border: 1px solid #dbe5ec; border-radius: .75rem; padding: 1rem; margin-bottom: 1rem; background: #fff; }
+.quiz-question legend { float: none; width: auto; font-size: 1rem; font-weight: 700; margin-bottom: .75rem; }
+.quiz-option { display: flex; align-items: flex-start; gap: .5rem; margin: .5rem 0; font-weight: 400; }
+.quiz-option input { margin-top: .35rem; }
+footer { margin-top: 1rem; }
+@media (max-width: 575.98px) { .logo { width: 52px; height: 52px; } #map { height: 300px; } .chat-box { height: 260px; } }
+
+/* Fotografías de los centros de salud */
+.imagen-centro {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Tarjetas de los centros */
+#mapa .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+#mapa .card:hover {
+    transform: translateY(-4px);
+}
+
+#mapa .card-body {
+    padding: 20px;
+}
+
+#mapa .card-title {
+    color: #0d6efd;
+    margin-bottom: 16px;
+}
